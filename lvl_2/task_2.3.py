@@ -7,5 +7,11 @@
 # switch_it_up(10000) -> None
 # Использовать условный оператор if-elif-else нельзя!
 
-def switch_it_up(number):
-    pass
+
+from num2words import num2words
+
+def switch_it_up(num):
+        print(num2words(num, lang='en'))
+
+num = int(input('Введите число от 0 до 9:'))
+switch_it_up(num)
